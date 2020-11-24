@@ -1,0 +1,223 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url("../img/cos.jpg")center/cover;
+}
+.logo{
+    width: 120px;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header_text{
+    position: relative;
+    text-align: center;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.header_text h1{
+    color: yellow;
+    font-size: 50px;
+}
+.header_text p{
+    width: 60%;
+    color: white;
+    font-size: 20px;
+}
+.header_text a{
+    background-color: rgb(111, 0, 255);
+    width: 20px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.header_text a:hover{
+    width: 200px;
+    transition: .5s;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+}
+.banner_1{
+    width: 100%;
+    height: 50vh;
+    background: url("../img/tower.jpg")center/cover;
+}
+/* section1 */
+#sec_1{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.info_blocks{
+    position: relative;
+    height: 65vh;
+    width: 29%;
+    padding: 20px;
+    overflow: hidden;
+}
+.info_blocks:hover .info_text{
+    bottom: 30px;
+    transition: .5s;
+}
+.info_text{
+    position: absolute;
+    bottom: -210px;
+    color: white;
+}
+.info_text a{
+    text-decoration: none;
+}
+.download{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(111, 0, 255);
+    border: 2px solid rgb(111, 0, 255);
+}
+.block_1{
+    background: url("../img/1.jpg")center/cover;
+}
+.block_2{
+    background: url("../img/2.jpg")center/cover;
+}
+.block_3{
+    background: url("../img/3.png")center/cover;
+}
+/* section2 */
+#sec_2{
+    display: flex;
+    flex-direction: column;
+}
+#sec_2 h1{
+    font-size: 40px;
+    color: grey;
+}
+.mini_sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.mini_img{
+    width: 300px;
+    height: 200px;
+}
+.mini1{
+    background:url("../img/4.jpg")center/cover;
+}
+.mini2{
+    background: url("../img/5.jpg")center/cover;
+}
+.mini3{
+    background: url("../img/6.jpg")center/cover;
+}
+.mini4{
+    background: url("../img/7.jpeg")center/cover;
+}
+/* section3 */
+#sec_3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+/* footer */
+footer{
+    height: 40vh;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.596);
+    text-align: center;
+    background: url("../img/foot.jpg")center/cover;
+}
+footer hr{
+    width: 800px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.foot_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.foot_text h3{
+    margin: 10px;
+}
+/* medias */
+@media screen and (max-width:1000px){
+    #sec_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_blocks{
+        width: 70%;
+        margin: 20px 0px;
+    }
+    #sec_3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #sec_3 video{
+        width: 600px;
+    }
+    .mini_sec{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:800px){
+    
+    #sec_3 video{
+        width: 500px;
+    }
+    
+    footer hr{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+    .info_text{
+        position: absolute;
+        bottom: -250px;
+        color: white;
+    }
+    #sec_3 video{
+        width: 320px;
+    }
+    
+    footer hr{
+        width: 200px;
+    }
+}
